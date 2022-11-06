@@ -2,6 +2,7 @@
 
 require_once './download_gzFromSitemap.php';
 
+// you can provide the file name as the location of .gz file as below comment example.
 // $file_name = './extracted_files/sitemap_dp_Co_working_Space.xml.gz';
 $buffer_size = 4096;
 $output_file = str_replace('.gz','',$save_file);
@@ -19,7 +20,7 @@ while(!gzeof($file)) {
 fclose($out_file);
 gzclose($file);
 
-// print_r($output_file);
+print_r($output_file);
 
 return $output_file;
 

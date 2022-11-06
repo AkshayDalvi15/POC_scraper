@@ -27,5 +27,8 @@ $title = $title->item(0)->textContent;
 $address = $address->item(0)->textContent;
 $price = $price->item(0)->textContent;
 var_dump($title);
+var_dump($address);
+var_dump($price);
+
 
 
